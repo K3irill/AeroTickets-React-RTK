@@ -1,0 +1,304 @@
+{
+	"tickets": [
+		{
+			"id": 1,
+			"from": "Москва",
+			"to": "Санкт-Петербург",
+			"company": "Аэрофлот",
+			"price": 3500,
+			"currency": "RUB",
+			"time": {
+				"departure": "08:00",
+				"arrival": "09:30"
+			},
+			"duration": 90,
+			"date": "2025-02-15",
+			"connectionAmount": null
+		},
+		{
+			"id": 2,
+			"from": "Санкт-Петербург",
+			"to": "Москва",
+			"company": "Победа",
+			"price": 2500,
+			"currency": "RUB",
+			"time": {
+				"departure": "18:00",
+				"arrival": "19:30"
+			},
+			"duration": 90,
+			"date": "2025-02-16",
+			"connectionAmount": null
+		},
+		{
+			"id": 3,
+			"from": "Екатеринбург",
+			"to": "Новосибирск",
+			"company": "S7 Airlines",
+			"price": 4000,
+			"currency": "RUB",
+			"time": {
+				"departure": "10:00",
+				"arrival": "13:00"
+			},
+			"duration": 180,
+			"date": "2025-02-20",
+			"connectionAmount": null
+		},
+		{
+			"id": 4,
+			"from": "Казань",
+			"to": "Сочи",
+			"company": "Аэрофлот",
+			"price": 6000,
+			"currency": "RUB",
+			"time": {
+				"departure": "12:00",
+				"arrival": "15:30"
+			},
+			"duration": 210,
+			"date": "2025-03-01",
+			"connectionAmount": null
+		},
+		{
+			"id": 5,
+			"from": "Красноярск",
+			"to": "Иркутск",
+			"company": "Utair",
+			"price": 4500,
+			"currency": "RUB",
+			"time": {
+				"departure": "06:00",
+				"arrival": "08:30"
+			},
+			"duration": 150,
+			"date": "2025-02-18",
+			"connectionAmount": null
+		},
+		{
+			"id": 6,
+			"from": "Уфа",
+			"to": "Москва",
+			"company": "Аэрофлот",
+			"price": 3200,
+			"currency": "RUB",
+			"time": {
+				"departure": "13:00",
+				"arrival": "15:00"
+			},
+			"duration": 120,
+			"date": "2025-02-25",
+			"connectionAmount": null
+		},
+		{
+			"id": 7,
+			"from": "Самара",
+			"to": "Калининград",
+			"company": "S7 Airlines",
+			"price": 8000,
+			"currency": "RUB",
+			"time": {
+				"departure": "08:00",
+				"arrival": "11:30"
+			},
+			"duration": 210,
+			"date": "2025-02-22",
+			"connectionAmount": 1
+		},
+		{
+			"id": 8,
+			"from": "Владивосток",
+			"to": "Москва",
+			"company": "Аэрофлот",
+			"price": 12000,
+			"currency": "RUB",
+			"time": {
+				"departure": "14:00",
+				"arrival": "20:00"
+			},
+			"duration": 360,
+			"date": "2025-03-05",
+			"connectionAmount": null
+		},
+		{
+			"id": 9,
+			"from": "Иркутск",
+			"to": "Хабаровск",
+			"company": "Utair",
+			"price": 7000,
+			"currency": "RUB",
+			"time": {
+				"departure": "09:00",
+				"arrival": "11:00"
+			},
+			"duration": 120,
+			"date": "2025-02-28",
+			"connectionAmount": null
+		},
+		{
+			"id": 10,
+			"from": "Москва",
+			"to": "Казань",
+			"company": "Аэрофлот",
+			"price": 3000,
+			"currency": "RUB",
+			"time": {
+				"departure": "07:00",
+				"arrival": "08:30"
+			},
+			"duration": 90,
+			"date": "2025-02-19",
+			"connectionAmount": null
+		},
+		{
+			"id": 11,
+			"from": "Сочи",
+			"to": "Ростов-на-Дону",
+			"company": "S7 Airlines",
+			"price": 4000,
+			"currency": "RUB",
+			"time": {
+				"departure": "17:00",
+				"arrival": "18:30"
+			},
+			"duration": 90,
+			"date": "2025-03-03",
+			"connectionAmount": null
+		},
+		{
+			"id": 12,
+			"from": "Казань",
+			"to": "Новосибирск",
+			"company": "Utair",
+			"price": 7500,
+			"currency": "RUB",
+			"time": {
+				"departure": "06:00",
+				"arrival": "09:00"
+			},
+			"duration": 180,
+			"date": "2025-02-26",
+			"connectionAmount": 1
+		},
+		{
+			"id": 13,
+			"from": "Москва",
+			"to": "Сургут",
+			"company": "Аэрофлот",
+			"price": 9500,
+			"currency": "RUB",
+			"time": {
+				"departure": "15:00",
+				"arrival": "19:30"
+			},
+			"duration": 270,
+			"date": "2025-03-02",
+			"connectionAmount": null
+		},
+		{
+			"id": 14,
+			"from": "Екатеринбург",
+			"to": "Краснодар",
+			"company": "S7 Airlines",
+			"price": 6700,
+			"currency": "RUB",
+			"time": {
+				"departure": "09:00",
+				"arrival": "12:00"
+			},
+			"duration": 180,
+			"date": "2025-03-07",
+			"connectionAmount": 1
+		},
+		{
+			"id": 15,
+			"from": "Санкт-Петербург",
+			"to": "Самара",
+			"company": "Utair",
+			"price": 5000,
+			"currency": "RUB",
+			"time": {
+				"departure": "18:00",
+				"arrival": "20:30"
+			},
+			"duration": 150,
+			"date": "2025-03-08",
+			"connectionAmount": null
+		},
+		{
+			"id": 16,
+			"from": "Краснодар",
+			"to": "Москва",
+			"company": "Победа",
+			"price": 3500,
+			"currency": "RUB",
+			"time": {
+				"departure": "11:00",
+				"arrival": "13:30"
+			},
+			"duration": 150,
+			"date": "2025-02-27",
+			"connectionAmount": null
+		},
+		{
+			"id": 17,
+			"from": "Новосибирск",
+			"to": "Томск",
+			"company": "S7 Airlines",
+			"price": 2500,
+			"currency": "RUB",
+			"time": {
+				"departure": "08:00",
+				"arrival": "09:00"
+			},
+			"duration": 60,
+			"date": "2025-03-04",
+			"connectionAmount": null
+		},
+		{
+			"id": 18,
+			"from": "Москва",
+			"to": "Уфа",
+			"company": "Аэрофлот",
+			"price": 4000,
+			"currency": "RUB",
+			"time": {
+				"departure": "13:00",
+				"arrival": "15:00"
+			},
+			"duration": 120,
+			"date": "2025-02-17",
+			"connectionAmount": null
+		},
+		{
+			"id": 19,
+			"from": "Калининград",
+			"to": "Санкт-Петербург",
+			"company": "S7 Airlines",
+			"price": 5500,
+			"currency": "RUB",
+			"time": {
+				"departure": "12:00",
+				"arrival": "14:30"
+			},
+			"duration": 150,
+			"date": "2025-03-06",
+			"connectionAmount": 1
+		},
+		{
+			"id": 20,
+			"from": "Ростов-на-Дону",
+			"to": "Сочи",
+			"company": "Utair",
+			"price": 2000,
+			"currency": "RUB",
+			"time": {
+				"departure": "19:00",
+				"arrival": "20:00"
+			},
+			"duration": 60,
+			"date": "2025-02-20",
+			"connectionAmount": null
+		}
+	]
+}
