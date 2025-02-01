@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { TicketType } from '../../types/types'
 import {
 	BottomInfo,
+	ImgWrapper,
 	InfoItem,
 	Price,
 	TextInfo,
@@ -17,7 +18,9 @@ const TicketElement: FunctionComponent<TicketType> = props => {
 		<TicketContainer>
 			<UpperInfo>
 				<Price>{props.price}</Price>
-				<img src={`${props.company}.svg`} />
+				<ImgWrapper>
+					<img src={`${props.company}.svg`} />
+				</ImgWrapper>
 			</UpperInfo>
 			<BottomInfo>
 				<InfoItem>

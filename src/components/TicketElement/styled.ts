@@ -19,6 +19,15 @@ export const Price = styled.div`
 	font-weight: 700;
 	font-size: 32px;
 `
+export const ImgWrapper = styled.div`
+	width: 180px;
+	height: 51px;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+`
 
 export const BottomInfo = styled.div`
 	display: flex;

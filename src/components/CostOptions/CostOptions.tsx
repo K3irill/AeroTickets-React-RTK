@@ -6,7 +6,7 @@ import { AppDispatch, RootState } from '../../store/store'
 
 const CostOptions = () => {
 	const dispatch = useDispatch<AppDispatch>()
-	const { company, connectionAmount, option } = useSelector(
+	const { companies, connectionAmount, option } = useSelector(
 		(state: RootState) => state.tickets.filters
 	)
 	return (
@@ -15,7 +15,7 @@ const CostOptions = () => {
 				onClick={() =>
 					dispatch(
 						setFilters({
-							company,
+							companies,
 							connectionAmount,
 							option: Option.Cheap,
 						})
@@ -29,7 +29,7 @@ const CostOptions = () => {
 				onClick={() =>
 					dispatch(
 						setFilters({
-							company,
+							companies,
 							connectionAmount,
 							option: Option.Speed,
 						})
@@ -43,7 +43,7 @@ const CostOptions = () => {
 				onClick={() =>
 					dispatch(
 						setFilters({
-							company,
+							companies,
 							connectionAmount,
 							option: Option.Optimal,
 						})

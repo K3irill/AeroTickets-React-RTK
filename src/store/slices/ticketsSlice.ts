@@ -9,7 +9,7 @@ export enum Option {
 }
 
 interface Filters {
-	company: string | null
+	companies: string[]
 	connectionAmount: number | null
 	option: Option | null
 }
@@ -26,7 +26,7 @@ const initialState: TicketsState = {
 	allTickets: [],
 	filteredTickets: [],
 	filters: {
-		company: null,
+		companies: [],
 		connectionAmount: null,
 		option: Option.Cheap,
 	},
@@ -42,9 +42,10 @@ export const ticketsSlice = createSlice({
 			state.filters = action.payload
 
 			state.filteredTickets = state.allTickets.filter(ticket => {
-				const matchesCompany = state.filters.company
-					? ticket.company === state.filters.company
-					: true
+				const matchesCompany =
+					state.filters.companies.length > 0
+						? state.filters.companies.includes(ticket.company)
+						: true
 
 				const matchesConnectionAmount =
 					state.filters.connectionAmount !== null
