@@ -10,8 +10,10 @@ export const OptionsContainer = styled.div`
 	height: 55px;
 	overflow: hidden;
 `
-
-export const ButtonStyled = styled.div`
+interface ButtonStyledProps {
+	isActive: boolean
+}
+export const ButtonStyled = styled.div<ButtonStyledProps>`
 	background: transparent;
 	display: flex;
 	align-items: center;

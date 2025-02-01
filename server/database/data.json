@@ -2,9 +2,9 @@
 	"tickets": [
 		{
 			"id": 1,
-			"from": "Москва",
-			"to": "Санкт-Петербург",
-			"company": "Аэрофлот",
+			"from": "Moscow",
+			"to": "Saint Petersburg",
+			"company": "red-wings",
 			"price": 3500,
 			"currency": "RUB",
 			"time": {
@@ -17,9 +17,9 @@
 		},
 		{
 			"id": 2,
-			"from": "Санкт-Петербург",
-			"to": "Москва",
-			"company": "Победа",
+			"from": "Saint Petersburg",
+			"to": "Moscow",
+			"company": "pobeda",
 			"price": 2500,
 			"currency": "RUB",
 			"time": {
@@ -32,9 +32,9 @@
 		},
 		{
 			"id": 3,
-			"from": "Екатеринбург",
-			"to": "Новосибирск",
-			"company": "S7 Airlines",
+			"from": "Yekaterinburg",
+			"to": "Novosibirsk",
+			"company": "s7-airlines",
 			"price": 4000,
 			"currency": "RUB",
 			"time": {
@@ -47,9 +47,9 @@
 		},
 		{
 			"id": 4,
-			"from": "Казань",
-			"to": "Сочи",
-			"company": "Аэрофлот",
+			"from": "Kazan",
+			"to": "Sochi",
+			"company": "red-wings",
 			"price": 6000,
 			"currency": "RUB",
 			"time": {
@@ -62,9 +62,9 @@
 		},
 		{
 			"id": 5,
-			"from": "Красноярск",
-			"to": "Иркутск",
-			"company": "Utair",
+			"from": "Krasnoyarsk",
+			"to": "Irkutsk",
+			"company": "s7-airlines",
 			"price": 4500,
 			"currency": "RUB",
 			"time": {
@@ -77,9 +77,9 @@
 		},
 		{
 			"id": 6,
-			"from": "Уфа",
-			"to": "Москва",
-			"company": "Аэрофлот",
+			"from": "Ufa",
+			"to": "Moscow",
+			"company": "pobeda",
 			"price": 3200,
 			"currency": "RUB",
 			"time": {
@@ -92,9 +92,9 @@
 		},
 		{
 			"id": 7,
-			"from": "Самара",
-			"to": "Калининград",
-			"company": "S7 Airlines",
+			"from": "Samara",
+			"to": "Kaliningrad",
+			"company": "s7-airlines",
 			"price": 8000,
 			"currency": "RUB",
 			"time": {
@@ -107,9 +107,9 @@
 		},
 		{
 			"id": 8,
-			"from": "Владивосток",
-			"to": "Москва",
-			"company": "Аэрофлот",
+			"from": "Vladivostok",
+			"to": "Moscow",
+			"company": "red-wings",
 			"price": 12000,
 			"currency": "RUB",
 			"time": {
@@ -122,9 +122,9 @@
 		},
 		{
 			"id": 9,
-			"from": "Иркутск",
-			"to": "Хабаровск",
-			"company": "Utair",
+			"from": "Irkutsk",
+			"to": "Khabarovsk",
+			"company": "s7-airlines",
 			"price": 7000,
 			"currency": "RUB",
 			"time": {
@@ -137,9 +137,9 @@
 		},
 		{
 			"id": 10,
-			"from": "Москва",
-			"to": "Казань",
-			"company": "Аэрофлот",
+			"from": "Moscow",
+			"to": "Kazan",
+			"company": "pobeda",
 			"price": 3000,
 			"currency": "RUB",
 			"time": {
@@ -152,9 +152,9 @@
 		},
 		{
 			"id": 11,
-			"from": "Сочи",
-			"to": "Ростов-на-Дону",
-			"company": "S7 Airlines",
+			"from": "Sochi",
+			"to": "Rostov-on-Don",
+			"company": "s7-airlines",
 			"price": 4000,
 			"currency": "RUB",
 			"time": {
@@ -167,9 +167,9 @@
 		},
 		{
 			"id": 12,
-			"from": "Казань",
-			"to": "Новосибирск",
-			"company": "Utair",
+			"from": "Kazan",
+			"to": "Novosibirsk",
+			"company": "red-wings",
 			"price": 7500,
 			"currency": "RUB",
 			"time": {
@@ -182,9 +182,9 @@
 		},
 		{
 			"id": 13,
-			"from": "Москва",
-			"to": "Сургут",
-			"company": "Аэрофлот",
+			"from": "Moscow",
+			"to": "Surgut",
+			"company": "pobeda",
 			"price": 9500,
 			"currency": "RUB",
 			"time": {
@@ -197,9 +197,9 @@
 		},
 		{
 			"id": 14,
-			"from": "Екатеринбург",
-			"to": "Краснодар",
-			"company": "S7 Airlines",
+			"from": "Yekaterinburg",
+			"to": "Krasnodar",
+			"company": "s7-airlines",
 			"price": 6700,
 			"currency": "RUB",
 			"time": {
@@ -212,9 +212,9 @@
 		},
 		{
 			"id": 15,
-			"from": "Санкт-Петербург",
-			"to": "Самара",
-			"company": "Utair",
+			"from": "Saint Petersburg",
+			"to": "Samara",
+			"company": "red-wings",
 			"price": 5000,
 			"currency": "RUB",
 			"time": {
@@ -227,9 +227,9 @@
 		},
 		{
 			"id": 16,
-			"from": "Краснодар",
-			"to": "Москва",
-			"company": "Победа",
+			"from": "Krasnodar",
+			"to": "Moscow",
+			"company": "pobeda",
 			"price": 3500,
 			"currency": "RUB",
 			"time": {
@@ -242,9 +242,9 @@
 		},
 		{
 			"id": 17,
-			"from": "Новосибирск",
-			"to": "Томск",
-			"company": "S7 Airlines",
+			"from": "Novosibirsk",
+			"to": "Tomsk",
+			"company": "s7-airlines",
 			"price": 2500,
 			"currency": "RUB",
 			"time": {
@@ -257,9 +257,9 @@
 		},
 		{
 			"id": 18,
-			"from": "Москва",
-			"to": "Уфа",
-			"company": "Аэрофлот",
+			"from": "Moscow",
+			"to": "Ufa",
+			"company": "red-wings",
 			"price": 4000,
 			"currency": "RUB",
 			"time": {
@@ -272,9 +272,9 @@
 		},
 		{
 			"id": 19,
-			"from": "Калининград",
-			"to": "Санкт-Петербург",
-			"company": "S7 Airlines",
+			"from": "Kaliningrad",
+			"to": "Saint Petersburg",
+			"company": "s7-airlines",
 			"price": 5500,
 			"currency": "RUB",
 			"time": {
@@ -287,9 +287,9 @@
 		},
 		{
 			"id": 20,
-			"from": "Ростов-на-Дону",
-			"to": "Сочи",
-			"company": "Utair",
+			"from": "Rostov-on-Don",
+			"to": "Sochi",
+			"company": "pobeda",
 			"price": 2000,
 			"currency": "RUB",
 			"time": {

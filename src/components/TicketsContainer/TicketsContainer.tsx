@@ -1,21 +1,25 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import CostOptions from '../CostOptions/CostOptions'
 import { ContainerStyled, TicketsList } from './styled'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchTickets } from '../../store/services/thunks'
 import TicketElement from '../TicketElement/TicketElement'
-import { TicketType } from '../../types/types'
-import { RootState } from '../../store/store'
+
+import { AppDispatch, RootState } from '../../store/store'
 
 const TicketsContainer = () => {
-	const dispatch = useDispatch()
-	const { tickets, loading, error } = useSelector(
+	const dispatch = useDispatch<AppDispatch>()
+	const { allTickets, loading, error } = useSelector(
 		(state: RootState) => state.tickets
+	)
+	const filteredTickets = useSelector(
+		(state: RootState) => state.tickets.filteredTickets
 	)
 
 	useEffect(() => {
 		dispatch(fetchTickets())
-		console.log(tickets)
+		console.log(allTickets)
+		console.log(filteredTickets)
 	}, [dispatch])
 
 	if (loading) {
@@ -30,8 +34,8 @@ const TicketsContainer = () => {
 		<ContainerStyled>
 			<CostOptions />
 			<TicketsList>
-				{tickets && tickets.length > 0 ? (
-					tickets.map(ticket => (
+				{filteredTickets && filteredTickets.length > 0 ? (
+					filteredTickets.map(ticket => (
 						<TicketElement key={ticket.id} {...ticket}></TicketElement>
 					))
 				) : (

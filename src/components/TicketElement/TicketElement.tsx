@@ -9,6 +9,7 @@ import {
 	TitleInfo,
 	UpperInfo,
 } from './styled'
+import { formatMinutesToHours } from '../../utils/formatMinuteToHours'
 
 const TicketElement: FunctionComponent<TicketType> = props => {
 	console.log(props)
@@ -16,7 +17,7 @@ const TicketElement: FunctionComponent<TicketType> = props => {
 		<TicketContainer>
 			<UpperInfo>
 				<Price>{props.price}</Price>
-				<img src='{props.company}.svg' />
+				<img src={`${props.company}.svg`} />
 			</UpperInfo>
 			<BottomInfo>
 				<InfoItem>
@@ -24,9 +25,9 @@ const TicketElement: FunctionComponent<TicketType> = props => {
 					<TextInfo>
 						{props.from && props.to ? (
 							<>
-								<span>{props.from}</span>
+								<span>{props.time.departure}</span>
 								{' - '}
-								<span>{props.to}</span>
+								<span>{props.time.arrival}</span>
 							</>
 						) : (
 							'-'
@@ -36,7 +37,9 @@ const TicketElement: FunctionComponent<TicketType> = props => {
 				<InfoItem>
 					<TitleInfo>В пути</TitleInfo>
 					<TextInfo>
-						<span>{props.duration ? props.duration : '-'}</span>
+						<span>
+							{props.duration ? formatMinutesToHours(props.duration) : '-'}
+						</span>
 					</TextInfo>
 				</InfoItem>
 				<InfoItem>
