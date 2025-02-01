@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { BREAKPOINTS } from '../../assets/styles/constants'
 
 export const Wrapper = styled.div`
 	width: 275px;
@@ -7,4 +8,8 @@ export const Wrapper = styled.div`
 	flex-shrink: 0;
 	height: fit-content;
 	gap: 47px;
+
+	@media (max-width: ${BREAKPOINTS.tablet}) {
+		display: none;
+	}
 `

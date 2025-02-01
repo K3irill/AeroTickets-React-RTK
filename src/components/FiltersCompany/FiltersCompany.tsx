@@ -5,7 +5,11 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setFilters } from '../../store/slices/ticketsSlice'
 import { companyOptions } from './companyOptions'
 
-const FiltersCompany = () => {
+interface FiltersCompanyProps {
+	isWhite?: boolean
+}
+
+const FiltersCompany = ({ isWhite }: FiltersCompanyProps) => {
 	const dispatch = useDispatch<AppDispatch>()
 	const { connectionAmount, option } = useSelector(
 		(state: RootState) => state.tickets.filters
@@ -40,6 +44,7 @@ const FiltersCompany = () => {
 			{companyOptions.map(option => (
 				<label key={option.id}>
 					<Checkbox
+						whiteMode={isWhite}
 						onChange={() => handleChange(option.value)}
 						type='checkbox'
 						id={option.id}

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { COLORS } from '../../assets/styles/constants'
+import { BREAKPOINTS, COLORS } from '../../assets/styles/constants'
 
 export const OptionsContainer = styled.div`
 	display: flex;
@@ -20,8 +20,12 @@ export const ButtonStyled = styled.div<ButtonStyledProps>`
 	justify-content: center;
 	width: 100%;
 	border: 1px solid ${COLORS.purple};
+	background: ${COLORS.grey};
 	cursor: pointer;
+	color: ${COLORS.purple};
+	font-weight: 700;
 	transition: color 0.4s, background 0.4s;
+
 	${p =>
 		p.isActive &&
 		css`
@@ -32,5 +36,12 @@ export const ButtonStyled = styled.div<ButtonStyledProps>`
 	&:hover {
 		background: ${COLORS.purple};
 		color: ${COLORS.white};
+	}
+
+	@media (max-width: ${BREAKPOINTS.mobile}) {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 14px;
+		text-align: center;
 	}
 `

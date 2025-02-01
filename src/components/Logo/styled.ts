@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { COLORS } from '../../assets/styles/constants'
+import { BREAKPOINTS, COLORS } from '../../assets/styles/constants'
 
 export const LogoWrapper = styled.div`
   display: flex;
@@ -18,4 +18,8 @@ export const LogoTitle = styled.p`
 	color: ${COLORS.purple};
 	font-size: 24px;
 	font-weight: 700;
+
+	@media (max-width: ${BREAKPOINTS.tablet}) {
+		display: none;
+	}
 `

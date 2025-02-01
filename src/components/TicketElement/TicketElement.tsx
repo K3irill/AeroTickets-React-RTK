@@ -17,7 +17,7 @@ const TicketElement: FunctionComponent<TicketType> = props => {
 	return (
 		<TicketContainer>
 			<UpperInfo>
-				<Price>{props.price}</Price>
+				<Price>{props.price} Р</Price>
 				<ImgWrapper>
 					<img src={`${props.company}.svg`} />
 				</ImgWrapper>
@@ -48,7 +48,11 @@ const TicketElement: FunctionComponent<TicketType> = props => {
 				<InfoItem>
 					<TitleInfo>Пересадки</TitleInfo>
 					<TextInfo>
-						<span>{props.connectionAmount ? props.connectionAmount : '-'}</span>
+						<span>
+							{props.connectionAmount
+								? props.connectionAmount
+								: 'Без пересадок'}
+						</span>
 					</TextInfo>
 				</InfoItem>
 			</BottomInfo>

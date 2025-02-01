@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import CostOptions from '../CostOptions/CostOptions'
-import { ContainerStyled, LoadMoreButton, TicketsList } from './styled'
+import {
+	ContainerStyled,
+	LoadMoreButton,
+	TicketMessage,
+	TicketsList,
+} from './styled'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchTickets } from '../../store/services/thunks'
 import TicketElement from '../TicketElement/TicketElement'
 import { AppDispatch, RootState } from '../../store/store'
+import MobileFilters from '../MobileFilters/MobileFilters'
 
 const TicketsContainer = () => {
 	const dispatch = useDispatch<AppDispatch>()
@@ -34,6 +40,7 @@ const TicketsContainer = () => {
 	return (
 		<ContainerStyled>
 			<CostOptions />
+			<MobileFilters />
 			<TicketsList>
 				{filteredTickets && filteredTickets.length > 0 ? (
 					filteredTickets
@@ -42,7 +49,7 @@ const TicketsContainer = () => {
 							<TicketElement key={ticket.id} {...ticket}></TicketElement>
 						))
 				) : (
-					<div>Нет доступных билетов</div>
+					<TicketMessage>Нет доступных билетов</TicketMessage>
 				)}
 			</TicketsList>
 

@@ -3,8 +3,10 @@ import { Wrapper, Radio, Text } from './styled'
 import { AppDispatch, RootState } from '../../store/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { setFilters } from '../../store/slices/ticketsSlice'
-
-const FilterTransfers = () => {
+interface FilterTransfersProps {
+	isWhite?: boolean
+}
+const FilterTransfers = ({ isWhite }: FilterTransfersProps) => {
 	const dispatch = useDispatch<AppDispatch>()
 	const { companies, option } = useSelector(
 		(state: RootState) => state.tickets.filters
@@ -22,6 +24,7 @@ const FilterTransfers = () => {
 							})
 						)
 					}
+					whiteMode={isWhite}
 					type='radio'
 					name='transfers'
 					id='0'
@@ -40,6 +43,7 @@ const FilterTransfers = () => {
 							})
 						)
 					}
+					whiteMode={isWhite}
 					type='radio'
 					name='transfers'
 					id='0'
@@ -58,6 +62,7 @@ const FilterTransfers = () => {
 							})
 						)
 					}
+					whiteMode={isWhite}
 					type='radio'
 					name='transfers'
 					id='1'
@@ -76,6 +81,7 @@ const FilterTransfers = () => {
 							})
 						)
 					}
+					whiteMode={isWhite}
 					type='radio'
 					name='transfers'
 					id='2'
@@ -94,6 +100,7 @@ const FilterTransfers = () => {
 							})
 						)
 					}
+					whiteMode={isWhite}
 					type='radio'
 					name='transfers'
 					id='3'

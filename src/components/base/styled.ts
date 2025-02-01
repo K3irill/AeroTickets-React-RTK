@@ -10,4 +10,8 @@ export const ContainerStyled = styled.div`
 	@media (min-width: ${BREAKPOINTS.medium}) {
 		padding: 0 30px;
 	}
+
+	@media (max-width: ${BREAKPOINTS.mobile}) {
+		padding: 0 12px;
+	}
 `

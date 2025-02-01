@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { COLORS } from '../../assets/styles/constants'
+import { BREAKPOINTS, COLORS } from '../../assets/styles/constants'
 
 export const TicketContainer = styled.div`
 	background: ${COLORS.grey};
@@ -8,6 +8,10 @@ export const TicketContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
+
+	@media (max-width: ${BREAKPOINTS.tablet}) {
+		padding: 17px 13px;
+	}
 `
 export const UpperInfo = styled.div`
 	display: flex;
@@ -18,6 +22,11 @@ export const Price = styled.div`
 	color: ${COLORS.purple};
 	font-weight: 700;
 	font-size: 32px;
+
+	@media (max-width: ${BREAKPOINTS.tablet}) {
+		font-size: 24px;
+		font-weight: 500;
+	}
 `
 export const ImgWrapper = styled.div`
 	width: 180px;
@@ -26,6 +35,11 @@ export const ImgWrapper = styled.div`
 	img {
 		width: 100%;
 		height: 100%;
+	}
+
+	@media (max-width: ${BREAKPOINTS.tablet}) {
+		width: 118px;
+		height: 41px;
 	}
 `
 
@@ -39,7 +53,9 @@ export const TitleInfo = styled.p`
 	color: ${COLORS.lavanda};
 `
 export const TextInfo = styled.p`
-	* {
+	span,
+	p {
 		color: ${COLORS.purple};
+		font-weight: 500;
 	}
 `
